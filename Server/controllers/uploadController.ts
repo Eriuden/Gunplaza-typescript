@@ -55,7 +55,7 @@ export const uploadProfil = async (
       )
     );
 
-    const updatedUser = await userModel.findByIdAndUpdate(
+    const updatedUser = await User.findByIdAndUpdate(
       req.body.userId,
       {
         $set: {
