@@ -55,5 +55,6 @@ const articleSchema= new Schema(
     {timestamps : true}
 )
 
-const articleModel = model<IArticle>("article", articleSchema)
-module.exports = articleModel
+export const Article = model<IArticle>
+("article", articleSchema)
+module.exports = Article

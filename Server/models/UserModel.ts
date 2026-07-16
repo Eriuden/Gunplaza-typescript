@@ -77,7 +77,5 @@ userSchema.statics.login = async function (
   return user;
 };
 
-export const User = mongoose.model<IUser, IUserModel>(
-  "User",
-  userSchema
-);
+export const User = mongoose.model<IUser, IUserModel>
+("User",userSchema);
