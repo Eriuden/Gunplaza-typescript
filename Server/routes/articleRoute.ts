@@ -21,3 +21,5 @@ router.patch("/:id", undislikeArticle)
 router.patch("/:id", commentArticle)
 router.patch("/:id", editCommentArticle)
 router.patch("/:id", deleteCommentArticle)
+
+export default router
